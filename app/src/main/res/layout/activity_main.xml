@@ -4,13 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#3D3B70"
+    android:background="@color/background"
     tools:context=".MainActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_above="@id/buttons_layout"
+    android:background="@drawable/rectangle"
+    android:orientation="vertical"
+    android:layout_margin="10dp">
 
     <TextView
         android:id="@+id/solution_tv"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="36dp"
         android:layout_above="@id/result_tv"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
@@ -33,6 +40,7 @@
         android:text="0"
         android:textAlignment="textEnd"
         android:textColor="@color/white" />
+</LinearLayout>
 
 
     <LinearLayout
